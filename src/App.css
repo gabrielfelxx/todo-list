@@ -1,0 +1,134 @@
+body {
+  padding: 15px;
+  background-color: #646cff;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  max-width: 600px;
+  margin: 10 auto 300px;
+  background-color: #242424;
+  padding: 20px 300px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #646cff;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 2rem);
+  border-radius: 10px;
+  left: calc(50% - 2rem + 80px);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.buttons {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.complete {
+  margin: 5px;
+  background-color: #47cb0a;
+}
+
+.remove {
+  margin: 5px;
+  background-color: #e72a09;
+}
+
+.todo-list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+}
+
+.todo {
+  padding: 10px 200px;
+  margin-bottom: 10px;
+  background-color: #1b1b1b;
+  border-radius: 25px;
+  transition: 300ms;
+}
+.todo:hover {
+  background-color: #242424;
+}
+
+
+.content {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.search-title {
+  display: flex;
+  justify-content: center;
+}
+
+.search-title h3 {
+  font-weight: 600;
+}
+
+.filter h3{
+  font-weight: 600;
+}
+
+.filter,
+.search {
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.filter-options div {
+  flex: 1 1 0;
+}
+
+.ordem .dsc{
+  margin-left: 20px;
+}
