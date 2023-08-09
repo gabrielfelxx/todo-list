@@ -1,15 +1,3 @@
-/* body {
-  padding: 15px;
-  background-color: #646cff;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  place-items: center;
-  min-height: 100vh;
-} */
-
 .app {
   background-color: #646cff;
   padding: 20px 200px;
@@ -92,10 +80,10 @@ input, select {
   border-radius: 25px;
   transition: 300ms;
 }
+
 .todo:hover {
   background-color: #242424;
 }
-
 
 .content {
   display:flex;
@@ -117,24 +105,29 @@ input, select {
 .filter h3{
   font-weight: 600;
 }
+
 .filter h3 {
   display: flex;
   justify-content: center;
 }
+
 .filter,
 .search {
   border-bottom: 1px solid;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
+
 .filter-options {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
 }
+
 .ordem .dsc{
   margin-left: 20px;
 }
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -148,14 +141,17 @@ button {
   opacity: .8;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: rgba(255, 255, 255, 0.87);
   opacity: 1;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
 .main-title::after {
   content: '';
   display: block;
@@ -172,6 +168,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -180,29 +177,6 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-
-/* @media (max-width: 900px) {
-  .app {
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    padding: 20px;
-  }
-  .filter-options {
-    padding-top: 30px;
-    margin: 0 auto;
-  }
-  .todo {
-    width: 10%;
-    margin: 20px auto;
-  }
-  .search, .filter, .todo-form {
-    width: 80%;
-    margin: 0 auto;
-  }
-} */
 
 @media (max-width: 780px) {
   .app {
