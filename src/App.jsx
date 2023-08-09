@@ -63,24 +63,26 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className='main-title'>ToDo List</h1>
-      <Search search={search} setSearch={setSearch} />
-      <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
-      <div className="todo-list">
-        {todos
-        .filter((todo) => filter === "All" ? true : filter === "Completed" ? todo.isCompleted : !todo.isCompleted)
-        .filter((todo) => todo.text.toLowerCase().includes(search.toLowerCase())
-        )
-        .sort((a, b) => sort == "Asc" ? a.text.localeCompare(b.text) : b.text.localeCompare(a.text))
-        .map((task) => (
-          
-          <Todo key={task.id} 
-          todo={task} 
-          del={del} 
-          complete={complete}/>
-          
-        ))} </div>
-      <TodoForm addTodo={addTodo} />
+      <div className="main-container">
+        <h1 className='main-title'>ToDo List</h1>
+        <Search search={search} setSearch={setSearch} />
+        <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
+        <div className="todo-list">
+          {todos
+          .filter((todo) => filter === "All" ? true : filter === "Completed" ? todo.isCompleted : !todo.isCompleted)
+          .filter((todo) => todo.text.toLowerCase().includes(search.toLowerCase())
+          )
+          .sort((a, b) => sort == "Asc" ? a.text.localeCompare(b.text) : b.text.localeCompare(a.text))
+          .map((task) => (
+            
+            <Todo key={task.id} 
+            todo={task} 
+            del={del} 
+            complete={complete}/>
+            
+          ))} </div>
+        <TodoForm addTodo={addTodo} />
+      </div>
     </div>
   );
 }

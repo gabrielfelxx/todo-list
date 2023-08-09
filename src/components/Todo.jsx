@@ -17,7 +17,7 @@ const Todo = ({ todo, del, complete }) => {
             onKeyDown={handleKeyPress}
         >
             <div className="content">
-                <p>{todo.text}</p>
+                <h3>{todo.text}</h3>
                 <p className="category">{todo.category}</p>
             </div>
             <div>
